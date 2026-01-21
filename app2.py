@@ -9,7 +9,7 @@ k = st.number_input("Koeficijent filtracije (m/s)", format="%f")
 ne = st.number_input("Efektivna poroznost (-)", max_value=1.0)
 
    
-if st.button("Calculate"):
+if st.button("Izračunaj"):
     i = dh / L                         # hidraulički gradijent
     v_d = k * i                        # Darsijeva brzina
     v_r = v_d / ne                     # realna brzina
